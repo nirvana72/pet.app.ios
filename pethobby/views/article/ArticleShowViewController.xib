@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArticleShowViewController" customModule="pethobby">
+            <connections>
+                <outlet property="inputBgBottomConstraint" destination="Qra-AH-A8N" id="kWt-dX-Xjo"/>
+                <outlet property="inputBgHeightConstraint" destination="KEa-Eg-WSq" id="CeN-Tt-rJZ"/>
+                <outlet property="lblReplyTo" destination="6zB-Co-PY5" id="ydG-dC-3Ix"/>
+                <outlet property="lblReplyToHeightConstraint" destination="UTK-rI-aJo" id="TBk-G0-UW9"/>
+                <outlet property="txtReply" destination="0v7-dC-vGt" id="eEj-f3-kwE"/>
+                <outlet property="view" destination="DUo-by-KpK" id="Tbo-A1-TAi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="DUo-by-KpK">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h78-7x-Hgt" userLabel="inputBg">
+                    <rect key="frame" x="0.0" y="807" width="414" height="55"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RIB-AM-Eiy" userLabel="topBorder">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                            <color key="backgroundColor" name="myColorLight2"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="gxG-Ll-zVa"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="回复:主题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zB-Co-PY5" userLabel="lblReplyTo">
+                            <rect key="frame" x="15" y="6" width="384" height="0.0"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="UTK-rI-aJo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" name="myColorDark2"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0v7-dC-vGt" userLabel="txtReply">
+                            <rect key="frame" x="10" y="6" width="394" height="39"/>
+                            <color key="backgroundColor" name="myColorLight0"/>
+                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="留下你的评论吧。。。"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" name="myColorLight1"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="6zB-Co-PY5" secondAttribute="trailing" constant="15" id="43b-cv-2EQ"/>
+                        <constraint firstAttribute="bottom" secondItem="0v7-dC-vGt" secondAttribute="bottom" constant="10" id="6ZY-0J-drs"/>
+                        <constraint firstItem="RIB-AM-Eiy" firstAttribute="leading" secondItem="h78-7x-Hgt" secondAttribute="leading" id="9Vz-hm-IYy"/>
+                        <constraint firstItem="RIB-AM-Eiy" firstAttribute="top" secondItem="h78-7x-Hgt" secondAttribute="top" id="Iud-Fy-N05"/>
+                        <constraint firstAttribute="height" constant="55" id="KEa-Eg-WSq"/>
+                        <constraint firstItem="6zB-Co-PY5" firstAttribute="top" secondItem="RIB-AM-Eiy" secondAttribute="bottom" constant="5" id="Pqc-UN-w7W"/>
+                        <constraint firstItem="0v7-dC-vGt" firstAttribute="top" secondItem="6zB-Co-PY5" secondAttribute="bottom" id="R1B-N9-qlY"/>
+                        <constraint firstAttribute="trailing" secondItem="RIB-AM-Eiy" secondAttribute="trailing" id="clh-ln-dgj"/>
+                        <constraint firstItem="6zB-Co-PY5" firstAttribute="leading" secondItem="h78-7x-Hgt" secondAttribute="leading" constant="15" id="tlF-5N-dXz"/>
+                        <constraint firstAttribute="trailing" secondItem="0v7-dC-vGt" secondAttribute="trailing" constant="10" id="uUE-7b-6zr"/>
+                        <constraint firstItem="0v7-dC-vGt" firstAttribute="leading" secondItem="h78-7x-Hgt" secondAttribute="leading" constant="10" id="yBs-8h-WZx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="myColorLight1"/>
+            <constraints>
+                <constraint firstItem="h78-7x-Hgt" firstAttribute="leading" secondItem="oKY-86-0pB" secondAttribute="leading" id="C7M-5b-xXo"/>
+                <constraint firstItem="h78-7x-Hgt" firstAttribute="bottom" secondItem="oKY-86-0pB" secondAttribute="bottom" id="Qra-AH-A8N"/>
+                <constraint firstItem="oKY-86-0pB" firstAttribute="trailing" secondItem="h78-7x-Hgt" secondAttribute="trailing" id="jwz-cL-FiF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="oKY-86-0pB"/>
+            <point key="canvasLocation" x="-91" y="-34"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="myColorDark2">
+            <color red="0.45899999141693115" green="0.45899999141693115" blue="0.45899999141693115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="myColorLight0">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="myColorLight1">
+            <color red="0.93699997663497925" green="0.93699997663497925" blue="0.93699997663497925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="myColorLight2">
+            <color red="0.84299999475479126" green="0.84299999475479126" blue="0.84299999475479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

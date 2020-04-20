@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="178" id="H8u-oY-oxP" customClass="IndexSearchResultCell" customModule="pethobby">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="178"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H8u-oY-oxP" id="1Jb-ht-tou">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="178"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sw7-V7-vpx" userLabel="vImg">
+                        <rect key="frame" x="10" y="59" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="vaU-Sf-PJY"/>
+                            <constraint firstAttribute="width" constant="60" id="xSY-mx-VF4"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_play_circle" translatesAutoresizingMaskIntoConstraints="NO" id="ol6-oC-1Di" userLabel="vTypeIcon">
+                        <rect key="frame" x="25" y="74" width="30" height="30"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Fca-O2-Mog"/>
+                            <constraint firstAttribute="width" constant="30" id="uUx-XK-1aQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKa-Nu-yMk" userLabel="lblTitle">
+                        <rect key="frame" x="80" y="59" width="324" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4v-JP-8vS" userLabel="lblSubTitle">
+                        <rect key="frame" x="80" y="82" width="304" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" name="myColorDark2"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="writetime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHe-M2-Hp5" userLabel="lblWritetime">
+                        <rect key="frame" x="80" y="103" width="304" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" name="myColorDark2"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ol6-oC-1Di" firstAttribute="centerX" secondItem="Sw7-V7-vpx" secondAttribute="centerX" id="6nv-Xi-R33"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Y4v-JP-8vS" secondAttribute="trailing" constant="10" id="7XM-Ot-cjQ"/>
+                    <constraint firstItem="sHe-M2-Hp5" firstAttribute="leading" secondItem="Sw7-V7-vpx" secondAttribute="trailing" constant="10" id="Bgy-Ut-5T5"/>
+                    <constraint firstAttribute="trailing" secondItem="KKa-Nu-yMk" secondAttribute="trailing" constant="10" id="HPB-BI-3Wk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="sHe-M2-Hp5" secondAttribute="trailing" constant="10" id="I6T-ya-4eS"/>
+                    <constraint firstItem="Sw7-V7-vpx" firstAttribute="leading" secondItem="1Jb-ht-tou" secondAttribute="leading" constant="10" id="I74-oK-3g8"/>
+                    <constraint firstItem="KKa-Nu-yMk" firstAttribute="leading" secondItem="Sw7-V7-vpx" secondAttribute="trailing" constant="10" id="Jyg-Rg-k55"/>
+                    <constraint firstItem="ol6-oC-1Di" firstAttribute="centerY" secondItem="Sw7-V7-vpx" secondAttribute="centerY" id="ZKV-zs-ff2"/>
+                    <constraint firstItem="Sw7-V7-vpx" firstAttribute="centerY" secondItem="1Jb-ht-tou" secondAttribute="centerY" id="aib-ch-jeR"/>
+                    <constraint firstItem="Y4v-JP-8vS" firstAttribute="top" secondItem="KKa-Nu-yMk" secondAttribute="bottom" constant="5" id="mPe-47-iju"/>
+                    <constraint firstItem="KKa-Nu-yMk" firstAttribute="top" secondItem="Sw7-V7-vpx" secondAttribute="top" id="mjK-pT-fXr"/>
+                    <constraint firstItem="sHe-M2-Hp5" firstAttribute="top" secondItem="Y4v-JP-8vS" secondAttribute="bottom" constant="5" id="sZm-UY-aRV"/>
+                    <constraint firstItem="Y4v-JP-8vS" firstAttribute="leading" secondItem="Sw7-V7-vpx" secondAttribute="trailing" constant="10" id="yN6-dD-11B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblSubTitle" destination="Y4v-JP-8vS" id="coF-mz-AC0"/>
+                <outlet property="lblTitle" destination="KKa-Nu-yMk" id="fVy-sE-G9i"/>
+                <outlet property="lblWritetime" destination="sHe-M2-Hp5" id="QhE-cC-yI6"/>
+                <outlet property="vImg" destination="Sw7-V7-vpx" id="NbJ-YS-LwL"/>
+                <outlet property="vTypeIcon" destination="ol6-oC-1Di" id="g4q-nZ-voK"/>
+            </connections>
+            <point key="canvasLocation" x="79.710144927536234" y="67.633928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_play_circle" width="144" height="144"/>
+        <namedColor name="myColorDark2">
+            <color red="0.45899999141693115" green="0.45899999141693115" blue="0.45899999141693115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

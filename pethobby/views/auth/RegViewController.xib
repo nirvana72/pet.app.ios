@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegViewController" customModule="pethobby" customModuleProvider="target">
+            <connections>
+                <outlet property="ivAgreeCheckBox" destination="Y78-3i-vzA" id="HXM-dt-ZyZ"/>
+                <outlet property="lblAgreeLink" destination="2Mg-mC-aSo" id="khx-yT-3lG"/>
+                <outlet property="lblPolicyLink" destination="Eud-Qy-jXu" id="7Jv-rq-5bO"/>
+                <outlet property="txtAccount" destination="6Oi-16-UhB" id="wCl-kj-McP"/>
+                <outlet property="txtEmail" destination="8qT-Ga-zii" id="IEq-Db-gdd"/>
+                <outlet property="txtMobile" destination="MQK-6K-SoG" id="poU-J0-VuH"/>
+                <outlet property="txtPassword" destination="h1j-Je-88Y" id="zEa-FR-IVB"/>
+                <outlet property="txtPasswordConfirm" destination="pVw-Gk-6G4" id="zha-Rp-345"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="btnRegTypes" destination="79a-gF-z6G" collectionClass="NSMutableArray" id="uxc-Gd-knp"/>
+                <outletCollection property="btnRegTypes" destination="nyr-aS-lnI" collectionClass="NSMutableArray" id="YAY-jk-WMF"/>
+                <outletCollection property="btnRegTypes" destination="gFc-PZ-m07" collectionClass="NSMutableArray" id="0gs-VQ-5DH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="eNg-nn-xB4" userLabel="Stack View types">
+                    <rect key="frame" x="92" y="144" width="230" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79a-gF-z6G" userLabel="btnRegTypeAccount" customClass="MyButton" customModule="pethobby" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <color key="backgroundColor" name="myColorDark3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="4d4-GB-hT5"/>
+                                <constraint firstAttribute="width" constant="50" id="xst-lO-Dbo"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <state key="normal" image="icon_account"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnRegType_onclick:" destination="-1" eventType="touchUpInside" id="0GX-oM-PUK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyr-aS-lnI" userLabel="btnRegTypeEmail" customClass="MyButton" customModule="pethobby" customModuleProvider="target">
+                            <rect key="frame" x="90" y="0.0" width="50" height="50"/>
+                            <color key="backgroundColor" name="myColorDark3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="N37-C6-l5n"/>
+                                <constraint firstAttribute="width" constant="50" id="tCz-JC-gPi"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <state key="normal" image="icon_email"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnRegType_onclick:" destination="-1" eventType="touchUpInside" id="WFz-14-g02"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFc-PZ-m07" userLabel="btnRegTypeMobile" customClass="MyButton" customModule="pethobby" customModuleProvider="target">
+                            <rect key="frame" x="180" y="0.0" width="50" height="50"/>
+                            <color key="backgroundColor" name="myColorDark3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="6wv-p9-EJq"/>
+                                <constraint firstAttribute="height" constant="50" id="Szb-x1-NVK"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <state key="normal" image="icon_phone"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnRegType_onclick:" destination="-1" eventType="touchUpInside" id="joT-kc-1A5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="xPa-Eb-Yrx" userLabel="Stack View input">
+                    <rect key="frame" x="20" y="244" width="374" height="345"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="账号注册" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Oi-16-UhB" userLabel="txtAccount">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="Jmy-Az-DqU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="电子邮箱注册" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8qT-Ga-zii" userLabel="txtEmail">
+                            <rect key="frame" x="0.0" y="60" width="374" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="ucr-3A-cCh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="手机号码注册" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MQK-6K-SoG" userLabel="txtMobile">
+                            <rect key="frame" x="0.0" y="120" width="374" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="I8i-7Z-UKn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h1j-Je-88Y" userLabel="txtPassword">
+                            <rect key="frame" x="0.0" y="180" width="374" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="WDf-Ws-Z5l"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="确认密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pVw-Gk-6G4" userLabel="txtPasswordConfirm">
+                            <rect key="frame" x="0.0" y="240" width="374" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="9Yb-Fw-96K"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDt-Nh-Qu4" userLabel="btnSubmit" customClass="MyButton" customModule="pethobby">
+                            <rect key="frame" x="0.0" y="300" width="374" height="45"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="6r7-eU-LQp"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="注册"/>
+                            <connections>
+                                <action selector="btnSubmit_onclick:" destination="-1" eventType="touchUpInside" id="xpJ-Rw-4cd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="0Ue-q3-ir7">
+                    <rect key="frame" x="74.5" y="599" width="265.5" height="25"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_checkbox_on" translatesAutoresizingMaskIntoConstraints="NO" id="Y78-3i-vzA" userLabel="ivAgreeCheckBox">
+                            <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                            <color key="tintColor" name="myColorDark0"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="Mk7-O0-izy"/>
+                                <constraint firstAttribute="height" constant="25" id="suc-9e-xrd"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="OEa-pc-gbe" appends="YES" id="skG-aJ-zah"/>
+                            </connections>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="同意" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNX-TM-xMU">
+                            <rect key="frame" x="25" y="0.0" width="40" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="nF9-p8-Tlp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="《用户许可协议》" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Mg-mC-aSo" userLabel="lblAgree">
+                            <rect key="frame" x="65" y="0.0" width="114.5" height="25"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" name="myColorBlue"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="《隐私政策》" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eud-Qy-jXu" userLabel="lblPolicy">
+                            <rect key="frame" x="179.5" y="0.0" width="86" height="25"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" name="myColorBlue"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <gestureRecognizers/>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="eNg-nn-xB4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3s5-VN-QP1"/>
+                <constraint firstItem="xPa-Eb-Yrx" firstAttribute="top" secondItem="eNg-nn-xB4" secondAttribute="bottom" constant="50" id="Fhd-4z-7Bn"/>
+                <constraint firstItem="eNg-nn-xB4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="Nj2-Lg-B8j"/>
+                <constraint firstItem="0Ue-q3-ir7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RAZ-ck-gwj"/>
+                <constraint firstItem="0Ue-q3-ir7" firstAttribute="top" secondItem="xPa-Eb-Yrx" secondAttribute="bottom" constant="10" id="Xew-hF-gqt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xPa-Eb-Yrx" secondAttribute="trailing" constant="20" id="lsC-Zo-ufS"/>
+                <constraint firstItem="xPa-Eb-Yrx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="rmv-Dd-I2O"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="129"/>
+        </view>
+        <tapGestureRecognizer id="OEa-pc-gbe" userLabel="tgrIvAgree">
+            <connections>
+                <action selector="ivAgree_click:" destination="-1" id="nHh-Rq-uuf"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="icon_account" width="144" height="144"/>
+        <image name="icon_checkbox_on" width="144" height="144"/>
+        <image name="icon_email" width="144" height="144"/>
+        <image name="icon_phone" width="144" height="144"/>
+        <namedColor name="myColorBlue">
+            <color red="0.17254901960784313" green="0.47058823529411764" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="myColorDark0">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="myColorDark3">
+            <color red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

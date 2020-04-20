@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IndexTabPublishViewController" customModule="pethobby" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="NW6-7v-gke">
+                    <rect key="frame" x="92" y="244" width="230" height="80"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tL3-O4-c3C">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="80"/>
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sa3-Xf-LIr" customClass="MyButton" customModule="pethobby">
+                                    <rect key="frame" x="-5" y="0.0" width="60" height="60"/>
+                                    <color key="backgroundColor" red="0.0039215686274509803" green="0.58823529411764708" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="yHT-Di-ubR"/>
+                                        <constraint firstAttribute="height" constant="60" id="ycf-Nq-Kal"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                    <state key="normal" image="icon_photo"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="30"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btn_onclick:" destination="-1" eventType="touchUpInside" id="CGm-zS-Kps"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图文" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqb-4Y-x1X" userLabel="label">
+                                    <rect key="frame" x="8.5" y="70" width="33" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="myColorDark2"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="4eJ-nO-hHV"/>
+                                <constraint firstItem="sa3-Xf-LIr" firstAttribute="top" secondItem="tL3-O4-c3C" secondAttribute="top" id="LRx-pS-nwJ"/>
+                                <constraint firstItem="sa3-Xf-LIr" firstAttribute="centerX" secondItem="tL3-O4-c3C" secondAttribute="centerX" id="SEh-S6-cDn"/>
+                                <constraint firstAttribute="width" constant="50" id="hDA-v3-4hN"/>
+                                <constraint firstItem="rqb-4Y-x1X" firstAttribute="top" secondItem="sa3-Xf-LIr" secondAttribute="bottom" constant="10" id="ifb-Yh-Yjr"/>
+                                <constraint firstItem="rqb-4Y-x1X" firstAttribute="centerX" secondItem="tL3-O4-c3C" secondAttribute="centerX" id="qVM-Uu-98w"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aO6-dm-wKa">
+                            <rect key="frame" x="90" y="0.0" width="50" height="80"/>
+                            <subviews>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfM-Sa-rbU" customClass="MyButton" customModule="pethobby">
+                                    <rect key="frame" x="-5" y="0.0" width="60" height="60"/>
+                                    <color key="backgroundColor" red="0.95686274509803915" green="0.26666666666666666" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="Edk-b8-uoe"/>
+                                        <constraint firstAttribute="width" constant="60" id="S7X-V5-M4u"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                    <state key="normal" image="icon_play_circle"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="30"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btn_onclick:" destination="-1" eventType="touchUpInside" id="gZa-wo-vM6"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="视频" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4b-MH-4vk" userLabel="label">
+                                    <rect key="frame" x="8.5" y="70" width="33" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="myColorDark2"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="YfM-Sa-rbU" firstAttribute="centerX" secondItem="aO6-dm-wKa" secondAttribute="centerX" id="TIR-6i-KHy"/>
+                                <constraint firstAttribute="width" constant="50" id="cB9-aR-y5G"/>
+                                <constraint firstItem="YfM-Sa-rbU" firstAttribute="top" secondItem="aO6-dm-wKa" secondAttribute="top" id="eRo-pj-BF9"/>
+                                <constraint firstItem="J4b-MH-4vk" firstAttribute="centerX" secondItem="aO6-dm-wKa" secondAttribute="centerX" id="lyp-nE-aqR"/>
+                                <constraint firstItem="J4b-MH-4vk" firstAttribute="top" secondItem="YfM-Sa-rbU" secondAttribute="bottom" constant="10" id="oj3-ft-HxI"/>
+                                <constraint firstAttribute="height" constant="80" id="rud-Jf-vBN"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MN3-HL-FTm">
+                            <rect key="frame" x="180" y="0.0" width="50" height="80"/>
+                            <subviews>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQ8-xM-n49" customClass="MyButton" customModule="pethobby">
+                                    <rect key="frame" x="-5" y="0.0" width="60" height="60"/>
+                                    <color key="backgroundColor" red="0.60784313725490191" green="0.14901960784313725" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="0Qr-fh-cqY"/>
+                                        <constraint firstAttribute="width" constant="60" id="Rju-8T-Qa7"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                    <state key="normal" image="icon_document"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="30"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btn_onclick:" destination="-1" eventType="touchUpInside" id="33Y-se-www"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="长贴" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NQ-yt-3SN" userLabel="label">
+                                    <rect key="frame" x="8.5" y="70" width="33" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="myColorDark2"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="vQ8-xM-n49" firstAttribute="centerX" secondItem="MN3-HL-FTm" secondAttribute="centerX" id="13q-jM-vdy"/>
+                                <constraint firstItem="vQ8-xM-n49" firstAttribute="top" secondItem="MN3-HL-FTm" secondAttribute="top" id="Gw7-X7-Usx"/>
+                                <constraint firstItem="1NQ-yt-3SN" firstAttribute="top" secondItem="vQ8-xM-n49" secondAttribute="bottom" constant="10" id="TmQ-9A-1Kk"/>
+                                <constraint firstAttribute="width" constant="50" id="YdU-Qe-cGs"/>
+                                <constraint firstAttribute="height" constant="80" id="scm-M2-Xh3"/>
+                                <constraint firstItem="1NQ-yt-3SN" firstAttribute="centerX" secondItem="MN3-HL-FTm" secondAttribute="centerX" id="tlG-C4-eKs"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" name="myColorLight0"/>
+            <constraints>
+                <constraint firstItem="NW6-7v-gke" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ia0-v2-3FF"/>
+                <constraint firstItem="NW6-7v-gke" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="tEO-fl-0qk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_document" width="144" height="144"/>
+        <image name="icon_photo" width="144" height="144"/>
+        <image name="icon_play_circle" width="144" height="144"/>
+        <namedColor name="myColorDark2">
+            <color red="0.45899999141693115" green="0.45899999141693115" blue="0.45899999141693115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="myColorLight0">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

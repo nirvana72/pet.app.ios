@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="CLZ-WE-ew8" customClass="MyAlbumDetialViewCell" customModule="pethobby">
+            <rect key="frame" x="0.0" y="0.0" width="213" height="195"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="213" height="195"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Cs-4k-Zl7" userLabel="imgV">
+                        <rect key="frame" x="0.0" y="0.0" width="213" height="195"/>
+                        <color key="backgroundColor" name="myColorDark3"/>
+                        <gestureRecognizers/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EvI-jo-4RQ" userLabel="iconSelected">
+                        <rect key="frame" x="179" y="10" width="24" height="24"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaU-lD-f4W" userLabel="lblOrder">
+                                <rect key="frame" x="7" y="1.5" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="myColorGreen"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="Izy-cz-iIw"/>
+                            <constraint firstAttribute="height" constant="24" id="TK7-tX-No1"/>
+                            <constraint firstItem="EaU-lD-f4W" firstAttribute="centerX" secondItem="EvI-jo-4RQ" secondAttribute="centerX" id="c6e-um-qNI"/>
+                            <constraint firstItem="EaU-lD-f4W" firstAttribute="centerY" secondItem="EvI-jo-4RQ" secondAttribute="centerY" id="uP0-RQ-dA3"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="3Cs-4k-Zl7" firstAttribute="leading" secondItem="CLZ-WE-ew8" secondAttribute="leading" id="DtB-tj-c7L"/>
+                <constraint firstAttribute="trailing" secondItem="3Cs-4k-Zl7" secondAttribute="trailing" id="GyO-48-Dli"/>
+                <constraint firstItem="EvI-jo-4RQ" firstAttribute="top" secondItem="CLZ-WE-ew8" secondAttribute="top" constant="10" id="WzG-Mt-ogb"/>
+                <constraint firstAttribute="trailing" secondItem="EvI-jo-4RQ" secondAttribute="trailing" constant="10" id="ZxO-m6-zqU"/>
+                <constraint firstItem="3Cs-4k-Zl7" firstAttribute="top" secondItem="CLZ-WE-ew8" secondAttribute="top" id="eu3-vu-6ZI"/>
+                <constraint firstAttribute="bottom" secondItem="3Cs-4k-Zl7" secondAttribute="bottom" id="sRL-Jy-pYj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="BDF-Mb-UAb"/>
+            <size key="customSize" width="213" height="195"/>
+            <connections>
+                <outlet property="iconSelected" destination="EvI-jo-4RQ" id="Hqt-xN-uW2"/>
+                <outlet property="imgV" destination="3Cs-4k-Zl7" id="tkL-uN-hVh"/>
+                <outlet property="lblOrder" destination="EaU-lD-f4W" id="A0f-gW-ww5"/>
+            </connections>
+            <point key="canvasLocation" x="617" y="-208"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="myColorDark3">
+            <color red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="myColorGreen">
+            <color red="0.25882352941176467" green="0.56862745098039214" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

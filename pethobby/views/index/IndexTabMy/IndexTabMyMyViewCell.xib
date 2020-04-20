@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="205" id="807-0B-Z1a" customClass="IndexTabMyMyViewCell" customModule="pethobby">
+            <rect key="frame" x="0.0" y="0.0" width="494" height="205"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="807-0B-Z1a" id="DCI-xL-nuv">
+                <rect key="frame" x="0.0" y="0.0" width="494" height="205"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TaR-j5-eSY" userLabel="vImg">
+                        <rect key="frame" x="20" y="72.5" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="OVV-eK-nhX"/>
+                            <constraint firstAttribute="height" constant="60" id="vxL-Pf-dwi"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_play_circle" translatesAutoresizingMaskIntoConstraints="NO" id="EBC-pa-y4t" userLabel="vTypeIcon">
+                        <rect key="frame" x="35" y="87.5" width="30" height="30"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="7JF-Eu-Qcm"/>
+                            <constraint firstAttribute="width" constant="30" id="OA7-Y9-f79"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zA1-Mh-Yx7" userLabel="lblTitle">
+                        <rect key="frame" x="90" y="72.5" width="374" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="writetime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygy-FC-Vl1" userLabel="lblWritetime">
+                        <rect key="frame" x="90" y="95.5" width="374" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" name="myColorDark2"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="into" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1o-FQ-jMi" userLabel="lblInfo">
+                        <rect key="frame" x="90" y="116.5" width="374" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" name="myColorDark2"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TaR-j5-eSY" firstAttribute="centerY" secondItem="DCI-xL-nuv" secondAttribute="centerY" id="2b2-LG-Tp4"/>
+                    <constraint firstItem="EBC-pa-y4t" firstAttribute="centerX" secondItem="TaR-j5-eSY" secondAttribute="centerX" id="6We-al-NNS"/>
+                    <constraint firstItem="ygy-FC-Vl1" firstAttribute="leading" secondItem="TaR-j5-eSY" secondAttribute="trailing" constant="10" id="9mr-WT-I56"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="p1o-FQ-jMi" secondAttribute="trailing" constant="10" id="AUv-db-5s9"/>
+                    <constraint firstItem="p1o-FQ-jMi" firstAttribute="leading" secondItem="TaR-j5-eSY" secondAttribute="trailing" constant="10" id="Fg9-of-crE"/>
+                    <constraint firstItem="TaR-j5-eSY" firstAttribute="leading" secondItem="DCI-xL-nuv" secondAttribute="leading" constant="20" id="J8N-1N-8PR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zA1-Mh-Yx7" secondAttribute="trailing" constant="10" id="KUZ-MT-MX7"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ygy-FC-Vl1" secondAttribute="trailing" constant="10" id="ZdZ-KG-lb2"/>
+                    <constraint firstItem="ygy-FC-Vl1" firstAttribute="top" secondItem="zA1-Mh-Yx7" secondAttribute="bottom" constant="5" id="dQL-Ef-36l"/>
+                    <constraint firstItem="zA1-Mh-Yx7" firstAttribute="leading" secondItem="TaR-j5-eSY" secondAttribute="trailing" constant="10" id="ezb-Z6-clk"/>
+                    <constraint firstItem="EBC-pa-y4t" firstAttribute="centerY" secondItem="TaR-j5-eSY" secondAttribute="centerY" id="hXi-yY-eNe"/>
+                    <constraint firstItem="zA1-Mh-Yx7" firstAttribute="top" secondItem="TaR-j5-eSY" secondAttribute="top" id="hg3-Sx-qBb"/>
+                    <constraint firstItem="p1o-FQ-jMi" firstAttribute="top" secondItem="ygy-FC-Vl1" secondAttribute="bottom" constant="5" id="jyO-9l-H9k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblInfo" destination="p1o-FQ-jMi" id="Fdp-nS-vRp"/>
+                <outlet property="lblTitle" destination="zA1-Mh-Yx7" id="852-XY-Rzg"/>
+                <outlet property="lblWritetime" destination="ygy-FC-Vl1" id="VA9-JS-y1L"/>
+                <outlet property="vImg" destination="TaR-j5-eSY" id="gxi-35-fFZ"/>
+                <outlet property="vTypeIcon" destination="EBC-pa-y4t" id="3ot-D6-UEl"/>
+            </connections>
+            <point key="canvasLocation" x="21.739130434782609" y="130.24553571428572"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_play_circle" width="144" height="144"/>
+        <namedColor name="myColorDark2">
+            <color red="0.45899999141693115" green="0.45899999141693115" blue="0.45899999141693115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

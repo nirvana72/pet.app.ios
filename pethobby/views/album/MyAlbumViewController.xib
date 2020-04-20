@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyAlbumViewController" customModule="pethobby">
+            <connections>
+                <outlet property="tblAlbum" destination="MZz-df-RDl" id="gha-wf-7yU"/>
+                <outlet property="view" destination="9eY-Ev-QLF" id="Vta-d2-lbB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9eY-Ev-QLF">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drl-Fu-jzv">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <color key="barTintColor" name="myColorLight1"/>
+                    <items>
+                        <navigationItem title="相簿" id="IiW-cE-ks1">
+                            <barButtonItem key="rightBarButtonItem" title="取消" id="vtE-5g-Kns" userLabel="btnNavCancel">
+                                <connections>
+                                    <action selector="onNavCancel:" destination="-1" id="lOa-9Y-6WA"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MZz-df-RDl">
+                    <rect key="frame" x="0.0" y="89" width="414" height="807"/>
+                    <color key="backgroundColor" name="myColorLight0"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" name="myColorLight1"/>
+            <constraints>
+                <constraint firstItem="MZz-df-RDl" firstAttribute="top" secondItem="drl-Fu-jzv" secondAttribute="bottom" constant="1" id="34v-r6-y6h"/>
+                <constraint firstItem="drl-Fu-jzv" firstAttribute="leading" secondItem="Q6g-9a-vye" secondAttribute="leading" id="A5W-wF-zIZ"/>
+                <constraint firstItem="drl-Fu-jzv" firstAttribute="top" secondItem="Q6g-9a-vye" secondAttribute="top" id="IrN-UD-lMF"/>
+                <constraint firstAttribute="bottom" secondItem="MZz-df-RDl" secondAttribute="bottom" id="O6W-Jm-IDd"/>
+                <constraint firstItem="Q6g-9a-vye" firstAttribute="trailing" secondItem="MZz-df-RDl" secondAttribute="trailing" id="Yd1-5L-eLB"/>
+                <constraint firstItem="MZz-df-RDl" firstAttribute="leading" secondItem="Q6g-9a-vye" secondAttribute="leading" id="ZvB-Ir-rwi"/>
+                <constraint firstItem="drl-Fu-jzv" firstAttribute="trailing" secondItem="Q6g-9a-vye" secondAttribute="trailing" id="wfF-PF-Ya0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q6g-9a-vye"/>
+            <point key="canvasLocation" x="48" y="26"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="myColorLight0">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="myColorLight1">
+            <color red="0.93699997663497925" green="0.93699997663497925" blue="0.93699997663497925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
